@@ -97,3 +97,89 @@ section {
 .bg3 {
     background-image: url(sport-3.jpg);
 }
+@media  screen and (max-width:1024px) {
+    h1{
+        font-size:6.5rem;
+    }
+
+    .secheading {
+        font-size: 4rem;
+        padding: 0rem 5rem;
+        transform:translateX(10%)
+    }
+
+    .text{
+        font-size:1.5rem;
+        padding: 0rem 0rem;
+        margin:2rem 2.5rem;
+
+    }
+
+    .desc{
+        font-size: 2.8rem;
+        padding:1rem 1rem;
+    }
+}
+
+@media  screen and (max-width:768px) {
+    
+    .background {
+        transform: translateZ(-60px) scale(7);
+    }
+    
+    .foreground {
+        transform: translateZ(-10px) scale(2);
+    }
+    
+    .background,
+    .foreground {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        object-fit: cover;
+    }
+   
+    
+    h1{
+        font-size:2.7rem;
+        top:8rem;
+    }
+
+    .secheading {
+        font-size: 2rem;
+        padding: 0rem 0rem;
+        transform:translateX(16%)
+    }
+
+    .text{
+        font-size:1rem;
+        padding: 0rem 0rem;
+        margin:1.5rem 1.5rem;
+    }
+
+    .desc{
+        font-size: 2rem;
+        padding:0rem 0.5rem;
+        text-align: center;
+    }
+
+    .container {
+        position: relative;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform-style: preserve-3d;
+        z-index: -1;
+    }
+
+    .bg {
+        position: relative;
+        width: 100%;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+    }
+}
